@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | John's Restaurant</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>John's Restaurant</h1>
+    </header>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+        <div class="hero-img">
+            <div class="hero-text">
+                <h1>Our Menu</h1>
+            </div>
+        </div>
+
+        <div class="grid-container">
+            <div class="grid-item">
+                <img id="image-1">
+
+                <h3 id="name-1"></h3>
+                <h3 id="price-1"></h3>
+
+                <button onclick="addToOrder(0)">Add to Order</button>
+            </div>
+
+            <div class="grid-item">
+                <img id="image-2">
+
+                <h3 id="name-2"></h3>
+                <h3 id="price-2"></h3>
+                
+                <button onclick="addToOrder(1)">Add to Order</button>
+            </div>
+
+            <div class="grid-item">
+                <img id="image-3">
+
+                <h3 id="name-3"></h3>
+                <h3 id="price-3"></h3>
+                
+                <button onclick="addToOrder(2)">Add to Order</button>
+            </div>
+        </div>
+
+        <div class="order-section">
+            <h2>Your Order <span id="totalQuantity">(0)</span></h2>
+
+            <p id="total">[ Total: $0.00 ]</p>
+        </div>
+    </main>
+
+    <footer>
+        Copyright &copy; 2026
+    </footer>
+</body>
+
+<script src="js/script.js"></script>
+
+</html>
